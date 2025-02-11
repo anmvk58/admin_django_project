@@ -11,6 +11,7 @@
     <title>{% block title %} VPBank {% endblock %}</title>
 
     <link rel="stylesheet" href="{% static 'classic.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     {% block css_files %}
     {% endblock %}
@@ -44,7 +45,8 @@
         <div class="main">
             {% include "includes/navbar_horizontal.html" %}
             <main class="content">
-				<div class="container p-0">
+				<div class="container-fluid p-0">
+<!--                <div>-->
                     {% block content %}
                     {% endblock %}
                 </div>

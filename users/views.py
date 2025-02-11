@@ -22,7 +22,3 @@ def register(request):
 @login_required(login_url='/user/login')
 def home(request):
     return render(request, 'users/home.html')
-
-
-
-
