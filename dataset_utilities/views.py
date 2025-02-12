@@ -31,3 +31,7 @@ class DatasetManagerView(generic.ListView):
     def get_queryset(self):
         """Return data will inject to view html"""
         return LIST_DATASET
+
+
+def create_new_dataset(request):
+    return render(request, 'dataset_utilities/create_new_dataset.html')

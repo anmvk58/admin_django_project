@@ -61,5 +61,7 @@
 
 </body>
 
-<script src="{% static 'app.js' %}"></script>
+{% block js_files %}
+    <script src="{% static 'app.js' %}"></script>
+{% endblock %}
 </html>
